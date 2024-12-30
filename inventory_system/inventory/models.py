@@ -15,7 +15,7 @@ class Category(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return self.name
+        return self.categoryname
 
 class Item(models.Model):
     itemname = models.CharField(max_length=255, unique=True)
